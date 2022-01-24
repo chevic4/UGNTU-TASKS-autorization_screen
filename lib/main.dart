@@ -18,20 +18,28 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       home: Scaffold(
         body: Container(
+          decoration: BoxDecoration(
+            image: DecorationImage(
+            image: AssetImage("assets/best-watercolor-backgrounds.jpeg"),
+            fit: BoxFit.fitHeight,
+          ),
+          ),
           width: double.infinity,
           padding: EdgeInsets.symmetric(horizontal: 40),
           child: Column (children: [
             SizedBox(height: 50,),
-            SizedBox(width: 110, height: 84, child: Placeholder(),),
+            const SizedBox(width: 110, height: 84, child: Image(image: AssetImage('assets/dart-logo 1.png')),),
             SizedBox(height: 20,),
             Text('введите номер телефона',
               style: TextStyle (fontSize: 14, color: Color.fromRGBO(0, 0, 8, 0.5)),),
             SizedBox(height: 20,),
             const SizedBox(width: 300,
             child: TextField(
+              keyboardType: TextInputType.phone,
               decoration: InputDecoration(
                 filled: true,
-                fillColor: Colors.cyanAccent,
+                fillColor: Color.fromRGBO(
+                    221, 243, 233, 0.9019607843137255),
                 enabledBorder: borderStyle,
                 focusedBorder: borderStyle,
                 disabledBorder: borderStyle,
@@ -60,7 +68,7 @@ class MyApp extends StatelessWidget {
               ElevatedButton(onPressed: () {},
                   child: Text('enter'),
                   style: ElevatedButton.styleFrom(
-                    primary: Color(0xFF007908),
+                    primary: Color(0xFF0079D0),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(36.0),
                     ),
@@ -70,11 +78,11 @@ class MyApp extends StatelessWidget {
             SizedBox(height: 65,),
             InkWell(child: const Text('registraction',
               style: TextStyle (fontSize: 14, color: Color.fromRGBO(
-                  1, 40, 155, 0.9019607843137255)),), onTap: () {}),
+                  90, 239, 90, 1.0)),), onTap: () {}),
             SizedBox(height: 20,),
             InkWell(child: const Text('забыли пароль?',
               style: TextStyle (fontSize: 14, color: Color.fromRGBO(
-                  1, 155, 83, 0.9019607843137255)),), onTap: () {}),
+                  90, 239, 90, 1.0)),), onTap: () {}),
           ],),
         )
       ),
