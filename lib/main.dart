@@ -13,17 +13,17 @@ class MyApp extends StatelessWidget {
     const borderStyle = OutlineInputBorder(
       borderRadius: BorderRadius.all(Radius.circular(36)),
       borderSide: BorderSide(
-        color: const Color(0xff8b8e93),width: 2));
+        color: const Color(0xECEFF1),width: 2));
 
     return MaterialApp(
       home: Scaffold(
         body: Container(
-          decoration: BoxDecoration(
+        /*  decoration: BoxDecoration(
             image: DecorationImage(
             image: AssetImage("assets/best-watercolor-backgrounds.jpeg"),
             fit: BoxFit.fitHeight,
           ),
-          ),
+          ), */
           width: double.infinity,
           padding: EdgeInsets.symmetric(horizontal: 40),
           child: Column (children: [
@@ -39,11 +39,11 @@ class MyApp extends StatelessWidget {
               decoration: InputDecoration(
                 filled: true,
                 fillColor: Color.fromRGBO(
-                    221, 243, 233, 0.9019607843137255),
+                    244, 239, 241, 1),
                 enabledBorder: borderStyle,
                 focusedBorder: borderStyle,
                 disabledBorder: borderStyle,
-                labelText: 'phone',
+                labelText: 'номер телефона',
 
               ),
               ),
@@ -55,8 +55,8 @@ class MyApp extends StatelessWidget {
                 decoration: InputDecoration(
                   filled: true,
                   fillColor: Color.fromRGBO(
-                      221, 243, 233, 0.9019607843137255),
-                  labelText: 'password',
+                      244, 239, 241, 1),
+                  labelText: 'пароль',
                   enabledBorder: borderStyle,
                   focusedBorder: borderStyle,
                   disabledBorder: borderStyle,
@@ -64,9 +64,9 @@ class MyApp extends StatelessWidget {
               ),
             ),
             SizedBox(height: 20,),
-            SizedBox(width: 300, height: 55, child:
+            SizedBox(width: 154, height: 55, child:
               ElevatedButton(onPressed: () {},
-                  child: Text('enter'),
+                  child: Text('Войти'),
                   style: ElevatedButton.styleFrom(
                     primary: Color(0xFF0079D0),
                     shape: RoundedRectangleBorder(
@@ -76,13 +76,13 @@ class MyApp extends StatelessWidget {
               )
             ),
             SizedBox(height: 65,),
-            InkWell(child: const Text('registraction',
+            InkWell(child: const Text('Регистрация',
               style: TextStyle (fontSize: 14, color: Color.fromRGBO(
-                  90, 239, 90, 1.0)),), onTap: () {}),
+                  0, 121, 208, 1)),), onTap: () {}),
             SizedBox(height: 20,),
-            InkWell(child: const Text('забыли пароль?',
+            InkWell(child: const Text('Забыли пароль?',
               style: TextStyle (fontSize: 14, color: Color.fromRGBO(
-                  90, 239, 90, 1.0)),), onTap: () {}),
+                  0, 121, 208, 1)),), onTap: () {}),
           ],),
         )
       ),
