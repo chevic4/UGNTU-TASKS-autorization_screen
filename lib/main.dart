@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/cupertino.dart';
+import 'taska24.dart';
 void main() {
-  runApp(const MyApp());
+  runApp(const ThemeVidj());
 }
-
+/*
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -89,3 +90,4 @@ class MyApp extends StatelessWidget {
     );
   }
 }
+*/
